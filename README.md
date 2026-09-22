@@ -68,6 +68,28 @@ npm run build
 
 ---
 
+## 🌐 Publicação no GitHub Pages
+
+O portal está preparado para visualização no GitHub Pages:
+
+- **Link do Projeto no GitHub Pages**: [https://andregbarbosa.github.io/ObservatorioMaua/](https://andregbarbosa.github.io/ObservatorioMaua/)
+
+### Como Ativar / Configurar no Repositório do GitHub:
+1. Acesse o repositório no GitHub: `https://github.com/AndreGBarbosa/ObservatorioMaua`
+2. Clique na aba **Settings** (Configurações) e no menu lateral clique em **Pages**.
+3. Em **Build and deployment > Source**:
+   - **Opção 1 (Recomendada via Branch)**: Selecione `Deploy from a branch` e escolha a branch `gh-pages` com a pasta `/ (root)`. Clique em **Save**.
+   - **Opção 2 (Via GitHub Actions)**: Selecione `GitHub Actions`. O workflow automático `.github/workflows/deploy.yml` já está configurado e fará o deploy a cada push na branch `main`.
+
+### Comandos para Deploy Manual:
+```bash
+# Build e publicação direta na branch gh-pages
+npm run deploy
+```
+
+---
+
 ## 📄 Licença
 
 Projeto desenvolvido para fins de transparência e utilidade pública municipal.
+
