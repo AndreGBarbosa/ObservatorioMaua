@@ -18,6 +18,7 @@ export default defineConfig({
         const notFoundFile = path.resolve(distDir, '404.html')
         if (fs.existsSync(indexFile)) {
           fs.copyFileSync(indexFile, notFoundFile)
+          fs.writeFileSync(path.resolve(distDir, '.nojekyll'), '')
         }
       },
     },
